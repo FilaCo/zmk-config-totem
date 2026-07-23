@@ -50,7 +50,7 @@
             label = "BASE_RU0";
             bindings = <
        &kp W       &kp R       &kp K        &kp COMMA    &kp Q        &kp RBKT   &kp S         &kp Z          &kp SQT     &kp A
-       &mt LGUI P  &mt LALT D  &mt LCTRL Y  &mt LSHFT N  &kp L        &kp H      &mt RSHFT F   &mt RCTRL J    &mt RALT T  &mt RGUI C
+       &mt LGUI P  &mt LALT D  &mt LCTRL Y  &mt LSHFT N  &kp L        &kp B      &mt RSHFT F   &mt RCTRL J    &mt RALT T  &mt RGUI C
 &mo 5  &kp LBKT    &kp G       &kp H        &kp V        &kp U        &kp GRAVE  &kp M         &kp E          &kp DOT     &kp I       &kp SLASH
                                &kp DEL      &lt 2 TAB    &kp SPACE    &kp RET    &lt 3 ESCAPE  &kp BACKSPACE
             >;
@@ -58,10 +58,10 @@
 
         nav_layer {
             bindings = <
-        &kp ESC         &bt BT_CLR  &kp UP        &kp EQUAL  &trans    &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9        &kp KP_PLUS
-        &kp LEFT_SHIFT  &kp LEFT    &kp DOWN      &kp RIGHT  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_NUMBER_6  &kp KP_MINUS
-&trans  &kp DEL         &kp PG_UP   &kp CAPSLOCK  &kp PG_DN  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3        &kp KP_MULTIPLY  &trans
-                                    &trans        &trans     &trans    &mo 4   &kp KP_N0  &trans
+        &kp ESC         &kp HOME   &kp UP        &kp END    &trans    &trans  &kp N7  &kp N8     &kp N9  &kp MINUS
+        &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &trans    &trans  &kp N4  &kp N5     &kp N6  &kp PLUS
+&trans  &kp DEL         &kp PG_UP  &kp CAPSLOCK  &kp PG_DN  &trans    &trans  &kp N1  &kp N2     &kp N3  &kp SLASH  &kp ASTERISK
+                                   &trans        &trans     &trans    &mo 4   &kp N0  &kp EQUAL
             >;
 
             label = "NAVI";
