@@ -31,22 +31,6 @@
             key-positions = <34 35>;
             timeout-ms = <50>;
         };
-
-        combo_th {
-            bindings = <&macro_th>;
-            key-positions = <2 13>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-    };
-
-    macros {
-        macro_th: macro_th {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H>;
-            label = "MACRO_TH";
-        };
     };
 
     keymap {
