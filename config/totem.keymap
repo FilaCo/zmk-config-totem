@@ -31,6 +31,18 @@
             key-positions = <34 35>;
             timeout-ms = <50>;
         };
+
+        combo_lang_switch_to_ru {
+            bindings = <&tog 1>;
+            key-positions = <34 10>;
+            layers = <0>;
+        };
+
+        combo_lang_switch_to_en {
+            bindings = <&tog 0>;
+            key-positions = <34 10>;
+            layers = <1 5>;
+        };
     };
 
     keymap {
@@ -49,10 +61,10 @@
         base_layer_ru0 {
             label = "BASE_RU0";
             bindings = <
-       &kp W       &kp R       &kp K        &kp COMMA    &kp Q        &kp RBKT   &kp S         &kp Z          &kp SQT     &kp A
-       &mt LGUI P  &mt LALT D  &mt LCTRL Y  &mt LSHFT N  &kp L        &kp B      &mt RSHFT F   &mt RCTRL J    &mt RALT T  &mt RGUI C
-&mo 5  &kp LBKT    &kp G       &kp H        &kp V        &kp U        &kp GRAVE  &kp M         &kp E          &kp DOT     &kp I       &kp SLASH
-                               &kp DEL      &lt 2 TAB    &kp SPACE    &kp RET    &lt 3 ESCAPE  &kp BACKSPACE
+       &kp W       &kp R       &kp K        &kp COMMA    &kp Q     &kp RBKT   &kp S        &kp Z        &kp SQT     &kp A
+       &mt LGUI P  &mt LALT D  &mt LCTRL Y  &mt LSHFT N  &kp L     &kp B      &mt RSHFT F  &mt RCTRL J  &mt RALT T  &mt RGUI C
+&mo 5  &kp LBKT    &kp G       &kp H        &kp V        &kp U     &kp GRAVE  &kp M        &kp E        &kp DOT     &kp I       &trans
+                               &trans       &trans       &trans    &trans     &trans       &trans
             >;
         };
 
@@ -82,7 +94,7 @@
             bindings = <
         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&tog 0  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
             >;
 
